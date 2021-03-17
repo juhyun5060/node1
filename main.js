@@ -1,5 +1,5 @@
 const http = require('http');
-const fs = require('fs');
+// const fs = require('fs');
 const url = require('url');
 
 const app = http.createServer(function(req, res){
@@ -7,10 +7,10 @@ const app = http.createServer(function(req, res){
    const queryData = url.parse(_url, true).query;
    let title = queryData.id;
    console.log(queryData.id);
-   if(_url == '/') {
+   if(_url === '/') {
       title = 'Welcome';
    }
-   if(_url == '/favicon.ico') {
+   if(_url === '/favicon.ico') {
       return res.writeHead(404);
    }
    res.writeHead(200);
