@@ -4,6 +4,8 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "express": "^4.17.1",
+    "mime": "^2.5.2",
     "sanitize-html": "^2.3.3"
   },
   "devDependencies": {},
