@@ -1,3 +1,21 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send("Hello World");
+});
+
+app.get('page/', function(req,res) {
+    res.send('page/')
+})
+
+app.listen(3030);
+
+
+
+
+
+/*
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
@@ -168,4 +186,5 @@ const app = http.createServer(function (request, response) {
     }
 
 });
-app.listen(3000);
+app.listen(3030);
+*/
